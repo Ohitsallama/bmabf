@@ -1,0 +1,52 @@
+body {
+  background-color: #a7d5f7;
+  font-family: "Gill Sans", sans-serif;
+}
+#wrap {
+  position: relative;
+}
+#wrap-inner {
+  background: url('../img/background_orangeswish.png') no-repeat center top;
+  padding-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+#hero-unit {  
+  position: absolute;
+  width: 100%;
+}
+#hero-unit-inner { margin: 0 auto; }
+
+header .logo {
+  background: url('../img/logo.png') no-repeat;
+  display: block;
+  width: 89px; height: 93px;
+}
+
+.lead {
+  background-color: RGBA(255,255,255,0.3);
+  font-size: 16px;
+  margin-top: 35px;
+  padding-top: 10px;
+}
+
+#home #hero-unit-inner {
+  background: url('../img/bg_home_boat.png') no-repeat left 130px;
+  width: 1020px; height: 581px;
+}
+
+#home h1 {
+  background: url('../img/Title_Homepage.png') no-repeat -34px 0;
+  margin: 0; padding: 0;
+  width: 931px; height: 134px;
+}
+
+#home .steps-to-success ol {
+  background: url('../img/Graphic_homepage.png') no-repeat;
+  margin: 0; padding: 0;
+  width: 591px; height: 400px;
+}
+#home .steps-to-success li {
+  display: none;
+}
+
