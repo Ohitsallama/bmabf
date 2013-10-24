@@ -1,6 +1,8 @@
 body {
   background-color: #a7d5f7;
   font-family: "Gill Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 #wrap {
   padding-bottom: 100px;
@@ -104,6 +106,42 @@ h2 {
   -webkit-text-stroke-width: 1px;
 }
 
+table thead tr {
+  background-color: #002aaf;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+table thead th {
+  font-size: 20px;
+  padding: 2px 0 2px 5%;
+}
+table td, table th {
+  border-left: 3px solid #002aaf;
+  color: white;
+}
+table td {
+  font-size: 15px;
+  padding: 7px;
+}
+table tr.even td {
+  background-color: RGBA(15,14,255,0.4);
+}
+table tr.odd td {
+  background-color: RGBA(15,14,255,0.5);
+}
+table td:last-child, table th:last-child {
+  border-right: 3px solid #002aaf;
+}
+table tbody tr:last-child td {
+  border-bottom: 3px solid #002aaf;
+}
+table ul {
+  padding-left: 1.3em;
+}
+table ul li {
+  padding-left: 1em;
+}
+
 /* ###################################################################### */
 /*   HOME PAGE                                                            */
 /* ###################################################################### */
@@ -154,4 +192,8 @@ h2 {
 #parents #hero-unit-inner {
   background: url('../img/bg_ForParents_SandCastle.png') no-repeat left 130px;
   width: 1020px; height: 873px;
+}
+
+#parents td {
+  vertical-align: top;
 }
