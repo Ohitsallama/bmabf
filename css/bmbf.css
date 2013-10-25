@@ -72,7 +72,7 @@ header .donate-cta a {
   background: url('../img/bluebutton.png') repeat-x;
   color: #002aaf;
   display: inline-block;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Luckiest Guy', cursive;
   font-size: 14px;
   height: 32px;
   line-height: 32px;
@@ -97,7 +97,7 @@ header .donate-cta a {
 
 h2 {
   color: #F5E8E8;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Luckiest Guy', cursive;
   font-weight: normal;
   text-shadow: -1px -1px 0 #002aaf,
                 1px -1px 0 #002aaf,
@@ -109,7 +109,7 @@ h2 {
 table thead tr {
   background-color: #002aaf;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Luckiest Guy', cursive;
 }
 table thead th {
   font-size: 20px;
