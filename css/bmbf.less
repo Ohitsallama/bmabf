@@ -1,3 +1,5 @@
+@title-font: 'Luckiest Guy', cursive;
+
 body {
   background-color: #a7d5f7;
   font-family: "Gill Sans", sans-serif;
@@ -14,19 +16,17 @@ body {
   position: relative;
   z-index: 1;
 }
-#hero-unit {
+#hero-unit {  
   position: absolute;
   width: 100%;
 }
-#hero-unit-inner {
-  margin: 0 auto;
-}
+#hero-unit-inner { margin: 0 auto; }
+
 header .logo {
   background: url('../img/logo.png') no-repeat;
   display: block;
   margin-bottom: 10px;
-  width: 89px;
-  height: 93px;
+  width: 89px; height: 93px;
 }
 header .navbar {
   background: url('../img/NavBar.png') repeat-x;
@@ -74,7 +74,7 @@ header .donate-cta a {
   background: url('../img/bluebutton.png') repeat-x;
   color: #002aaf;
   display: inline-block;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: @title-font;
   font-size: 14px;
   height: 32px;
   line-height: 32px;
@@ -82,35 +82,42 @@ header .donate-cta a {
   padding: 0 20px;
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-shadow: -1px -1px 0 #fff,
+                1px -1px 0 #fff,
+               -1px  1px 0 #fff,
+                1px  1px 0 #fff;
 }
+
 .lead {
   /*background-color: RGBA(255,255,255,0.3);*/
-
   font-size: 16px;
   font-weight: 400;
   margin-top: 35px;
   padding-top: 10px;
 }
+
 h2 {
   color: #F5E8E8;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: @title-font;
   font-weight: normal;
   letter-spacing: 3px;
-  text-shadow: -1px -1px 0 #002aaf, 1px -1px 0 #002aaf, -3px 2px 0 #002aaf, 1px 3px 0 #002aaf;
+  text-shadow: -1px -1px 0 #002aaf,
+                1px -1px 0 #002aaf,
+               -3px  2px 0 #002aaf,
+                1px  3px 0 #002aaf;
 }
+
 table thead tr {
   background-color: #002aaf;
 }
 table thead th {
   color: white;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: @title-font;
   font-size: 20px;
   letter-spacing: 1px;
   padding: 8px 0 0 5%;
 }
-table td,
-table th {
+table td, table th {
   border-left: 3px solid #002aaf;
   color: white;
 }
@@ -119,13 +126,12 @@ table td {
   padding: 7px;
 }
 table tr.even td {
-  background-color: RGBA(15, 14, 255, 0.4);
+  background-color: RGBA(15,14,255,0.4);
 }
 table tr.odd td {
-  background-color: RGBA(15, 14, 255, 0.5);
+  background-color: RGBA(15,14,255,0.5);
 }
-table td:last-child,
-table th:last-child {
+table td:last-child, table th:last-child {
   border-right: 3px solid #002aaf;
 }
 table tbody tr:last-child td {
@@ -137,58 +143,59 @@ table ul {
 table ul li {
   padding-left: 1em;
 }
+
 /* ###################################################################### */
 /*   HOME PAGE                                                            */
 /* ###################################################################### */
+
 #home #hero-unit-inner {
   background: url('../img/bg_home_boat.png') no-repeat left 130px;
-  width: 1020px;
-  height: 581px;
+  width: 1020px; height: 581px;
 }
 #home h1 {
   background: url('../img/Title_Homepage.png') no-repeat -34px 0;
-  margin: 0;
-  padding: 0;
-  width: 931px;
-  height: 134px;
+  margin: 0; padding: 0;
+  width: 931px; height: 134px;
 }
 #home .photos p {
   margin-bottom: 20px;
 }
 #home .steps-to-success ol {
   background: url('../img/Graphic_homepage.png') no-repeat;
-  margin: 0;
-  padding: 0;
-  width: 591px;
-  height: 400px;
+  margin: 0; padding: 0;
+  width: 591px; height: 400px;
 }
 #home .steps-to-success li {
   display: none;
 }
+
 /* ###################################################################### */
 /*   ABOUT PAGE                                                           */
 /* ###################################################################### */
+
 #about #hero-unit-inner {
   background: url('../img/bg_aboutus_children.png') no-repeat left 130px;
-  width: 1020px;
-  height: 581px;
+  width: 1020px; height: 581px;
 }
+
 /* ###################################################################### */
 /*   PROGRAMS PAGE                                                        */
 /* ###################################################################### */
+
 #programs #hero-unit-inner {
   background: url('../img/bg_programs_boat.png') no-repeat left 130px;
-  width: 1020px;
-  height: 581px;
+  width: 1020px; height: 581px;
 }
+
 /* ###################################################################### */
 /*   FOR PARENTS PAGE                                                     */
 /* ###################################################################### */
+
 #parents #hero-unit-inner {
   background: url('../img/bg_ForParents_SandCastle.png') no-repeat left 130px;
-  width: 1020px;
-  height: 873px;
+  width: 1020px; height: 873px;
 }
+
 #parents td {
   vertical-align: top;
 }
