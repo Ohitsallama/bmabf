@@ -111,6 +111,13 @@ a.btn-primary {
 a.btn-primary:hover {
   color: #002aaf;
 }
+.photo {
+  font-size: 14px;
+  font-style: italic;
+}
+.photo.row {
+  margin-top: 30px;
+}
 .lead {
   /*background-color: RGBA(255,255,255,0.3);*/
 
@@ -199,6 +206,9 @@ table ul li {
   background: url('../img/bg_aboutus_children.png') no-repeat left 130px;
   width: 1020px;
   height: 581px;
+}
+#about .supporters .photo {
+  margin-top: 68px;
 }
 /* ###################################################################### */
 /*   PROGRAMS PAGE                                                        */

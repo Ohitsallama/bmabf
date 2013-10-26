@@ -115,6 +115,13 @@ a.btn-primary {
     color: @blue-color;
   }
 }
+.photo {
+  font-size: 14px;
+  font-style: italic;
+  &.row {
+    margin-top: 30px;
+  }
+}
 .lead {
   /*background-color: RGBA(255,255,255,0.3);*/
   font-size: 16px;
@@ -200,9 +207,12 @@ table ul li {
 /*   ABOUT PAGE                                                           */
 /* ###################################################################### */
 
-#about #hero-unit-inner {
-  background: url('../img/bg_aboutus_children.png') no-repeat left 130px;
-  width: 1020px; height: 581px;
+#about {
+  #hero-unit-inner {
+    background: url('../img/bg_aboutus_children.png') no-repeat left 130px;
+    width: 1020px; height: 581px;
+  }
+  .supporters .photo { margin-top: 68px; }
 }
 
 /* ###################################################################### */
