@@ -65,6 +65,12 @@ header .navbar-inverse .navbar-nav > .active > a:hover {
   background: url('../img/NavBar_hover.png') repeat-x;
   color: #fed100;
 }
+header .donate p {
+  color: #002aaf;
+  font-style: italic;
+  margin-top: 20px;
+  text-align: right;
+}
 header .donate-cta p {
   color: #002aaf;
   font-style: italic;
@@ -84,6 +90,26 @@ header .donate-cta a {
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+a.btn-primary {
+  background: url('../img/bluebutton.png') repeat-x;
+  border: none;
+  border-radius: 0;
+  color: #002aaf;
+  display: inline-block;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 14px;
+  font-style: italic;
+  height: 30px;
+  line-height: 31px;
+  letter-spacing: 3px;
+  padding: 2px 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+a.btn-primary:hover {
+  color: #002aaf;
 }
 .lead {
   /*background-color: RGBA(255,255,255,0.3);*/
@@ -212,4 +238,7 @@ table ul li {
   background: url('../img/bg_Volunteer_PelicansBooks.png') no-repeat left 130px;
   width: 1020px;
   height: 873px;
+}
+#volunteer .email-us {
+  margin-left: 10px;
 }
