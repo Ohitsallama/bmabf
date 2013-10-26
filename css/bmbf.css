@@ -172,6 +172,12 @@ table ul {
 table ul li {
   padding-left: 1em;
 }
+.carousel-inner .item {
+  background-color: white;
+}
+.carousel-inner .item img {
+  margin: 0 auto;
+}
 /* ###################################################################### */
 /*   HOME PAGE                                                            */
 /* ###################################################################### */
@@ -218,6 +224,12 @@ table ul li {
   background: url('../img/bg_programs_boat.png') no-repeat left 130px;
   width: 1020px;
   height: 581px;
+}
+#programs #parent-family-edu-events-photos {
+  height: 500px;
+}
+#programs #parent-family-edu-events-photos img {
+  max-height: 500px;
 }
 /* ###################################################################### */
 /*   FOR PARENTS PAGE                                                     */

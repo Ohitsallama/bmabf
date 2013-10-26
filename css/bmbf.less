@@ -179,6 +179,13 @@ table ul li {
   padding-left: 1em;
 }
 
+.carousel-inner {
+  .item {
+    background-color: white;
+    img { margin: 0 auto; }
+  }
+}
+
 /* ###################################################################### */
 /*   HOME PAGE                                                            */
 /* ###################################################################### */
@@ -220,9 +227,16 @@ table ul li {
 /*   PROGRAMS PAGE                                                        */
 /* ###################################################################### */
 
-#programs #hero-unit-inner {
-  background: url('../img/bg_programs_boat.png') no-repeat left 130px;
-  width: 1020px; height: 581px;
+#programs {
+  #hero-unit-inner {
+    background: url('../img/bg_programs_boat.png') no-repeat left 130px;
+    width: 1020px; height: 581px;
+  }
+
+  #parent-family-edu-events-photos {
+    height: 500px;
+    img { max-height: 500px; }
+  }
 }
 
 /* ###################################################################### */
