@@ -65,6 +65,24 @@ header .navbar-inverse .navbar-nav > .active > a:hover {
   background: url('../img/NavBar_hover.png') repeat-x;
   color: #fed100;
 }
+header .navbar-inverse .navbar-nav > .open > a,
+header .navbar-inverse .navbar-nav > .open > a:hover,
+header .navbar-inverse .navbar-nav > .open > a:focus {
+  background: url('../img/NavBar_hover.png') repeat-x;
+  color: #fed100;
+}
+header .navbar-nav > li > .dropdown-menu {
+  background-color: #683f00;
+  margin-top: -1px;
+}
+header .dropdown-menu > li > a {
+  color: #fed100;
+  line-height: 26px;
+}
+header .dropdown-menu > li > a:hover {
+  color: #fed100;
+  background: url('../img/NavBar_hover.png') repeat-x;
+}
 header .donate p {
   color: #002aaf;
   font-style: italic;

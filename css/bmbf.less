@@ -1,5 +1,6 @@
 @title-font: 'Luckiest Guy', cursive;
 @blue-color: #002aaf;
+@nav-font-color: #fed100;
 
 body {
   background-color: #a7d5f7;
@@ -53,18 +54,36 @@ header .navbar-inverse .navbar-nav > li {
   padding-right: 1px;
 }
 header .navbar-inverse .navbar-nav > li > a {
-  color: #fed100;
+  color: @nav-font-color;
 }
 header .navbar-inverse .navbar-nav > li > a:focus,
 header .navbar-inverse .navbar-nav > li > a:hover {
   background: url('../img/NavBar_hover.png') repeat-x;
-  color: #fed100;
+  color: @nav-font-color;
 }
 header .navbar-inverse .navbar-nav > .active > a,
 header .navbar-inverse .navbar-nav > .active > a:focus,
 header .navbar-inverse .navbar-nav > .active > a:hover {
   background: url('../img/NavBar_hover.png') repeat-x;
-  color: #fed100;
+  color: @nav-font-color;
+}
+header .navbar-inverse .navbar-nav > .open > a,
+header .navbar-inverse .navbar-nav > .open > a:hover,
+header .navbar-inverse .navbar-nav > .open > a:focus {
+  background: url('../img/NavBar_hover.png') repeat-x;
+  color: @nav-font-color;
+}
+header .navbar-nav > li > .dropdown-menu {
+  background-color: #683f00;
+  margin-top: -1px;
+}
+header .dropdown-menu > li > a {
+  color: @nav-font-color;
+  line-height: 26px;
+}
+header .dropdown-menu > li > a:hover {
+  color: @nav-font-color;
+  background: url('../img/NavBar_hover.png') repeat-x;
 }
 header .donate p {
   color: @blue-color;
