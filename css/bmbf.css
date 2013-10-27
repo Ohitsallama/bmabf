@@ -242,6 +242,15 @@ table ul li {
 #parents td {
   vertical-align: top;
 }
+#parents .row.photo {
+  margin-top: 0;
+}
+#parents .row.photo img {
+  margin: 10px 10px 20px 0;
+}
+#parents .suggestions-spanish {
+  margin-top: 20px;
+}
 /* ###################################################################### */
 /*   LOCAL LIBRARIES PAGE                                                 */
 /* ###################################################################### */
