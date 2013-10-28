@@ -150,6 +150,7 @@ h2 {
   font-family: 'Luckiest Guy', cursive;
   font-weight: normal;
   letter-spacing: 3px;
+  margin-top: 30px;
   text-shadow: -1px -1px 0 #002aaf, 1px -1px 0 #002aaf, -3px 2px 0 #002aaf, 1px 3px 0 #002aaf;
 }
 table thead tr {
