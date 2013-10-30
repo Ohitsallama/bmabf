@@ -1,7 +1,7 @@
 body {
   background-color: #a7d5f7;
   font-family: "Gill Sans", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 #wrap {
@@ -37,6 +37,7 @@ header .navbar {
   min-height: 32px;
 }
 header .navbar-nav > li > a {
+  font-size: 16px;
   line-height: 32px;
   padding: 0;
   text-align: center;
@@ -52,35 +53,35 @@ header .navbar-inverse .navbar-nav > li {
   padding-right: 1px;
 }
 header .navbar-inverse .navbar-nav > li > a {
-  color: #fed100;
+  color: #ffe58b;
 }
 header .navbar-inverse .navbar-nav > li > a:focus,
 header .navbar-inverse .navbar-nav > li > a:hover {
   background: url('../img/NavBar_hover.png') repeat-x;
-  color: #fed100;
+  color: #ffe58b;
 }
 header .navbar-inverse .navbar-nav > .active > a,
 header .navbar-inverse .navbar-nav > .active > a:focus,
 header .navbar-inverse .navbar-nav > .active > a:hover {
   background: url('../img/NavBar_hover.png') repeat-x;
-  color: #fed100;
+  color: #ffe58b;
 }
 header .navbar-inverse .navbar-nav > .open > a,
 header .navbar-inverse .navbar-nav > .open > a:hover,
 header .navbar-inverse .navbar-nav > .open > a:focus {
   background: url('../img/NavBar_hover.png') repeat-x;
-  color: #fed100;
+  color: #ffe58b;
 }
 header .navbar-nav > li > .dropdown-menu {
   background-color: #683f00;
   margin-top: -1px;
 }
 header .dropdown-menu > li > a {
-  color: #fed100;
+  color: #ffe58b;
   line-height: 26px;
 }
 header .dropdown-menu > li > a:hover {
-  color: #fed100;
+  color: #ffe58b;
   background: url('../img/NavBar_hover.png') repeat-x;
 }
 header .donate p {
@@ -109,6 +110,46 @@ header .donate-cta a {
   text-transform: uppercase;
   text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
 }
+footer ul {
+  font-size: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul.main-nav {
+  border-top: 1px solid #683f00;
+  margin: 50px 0 0;
+  padding: 5px 0 0;
+}
+footer ul li {
+  float: left;
+  margin-left: 20px;
+}
+footer ul li:first-child {
+  margin-left: 0;
+}
+footer ul li a,
+footer ul li a:hover,
+footer ul li a:active,
+footer ul li a:visited {
+  color: #683f00;
+}
+footer .sub-nav p {
+  float: left;
+  margin-top: 10px;
+}
+footer .sub-nav ul {
+  float: left;
+  font-size: 14px;
+  font-style: italic;
+  margin: 10px 0 0 15px;
+}
+footer .sub-nav ul li {
+  line-height: 26px;
+}
+footer .donate {
+  text-align: center;
+}
 a.btn-primary {
   background: url('../img/bluebutton.png') repeat-x;
   border: none;
@@ -133,17 +174,20 @@ a.btn-primary:hover {
   font-size: 14px;
   font-style: italic;
 }
-.photo.row {
+.photo.row.more {
   margin-top: 30px;
 }
 .lead {
   /*background-color: RGBA(255,255,255,0.3);*/
 
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 0;
   margin-top: 35px;
   padding-top: 10px;
+}
+p {
+  margin-bottom: 1.5em;
 }
 h2 {
   color: #F5E8E8;
@@ -197,6 +241,12 @@ table ul li {
 .carousel-inner .item img {
   margin: 0 auto;
 }
+.carousel-control span.glyphicon {
+  background-color: RGBA(0, 0, 0, 0.9);
+  border-radius: 50%;
+  padding: 5px 8px 9px 7px;
+  line-height: 1em;
+}
 /* ###################################################################### */
 /*   HOME PAGE                                                            */
 /* ###################################################################### */
@@ -225,6 +275,9 @@ table ul li {
 #home .steps-to-success li {
   display: none;
 }
+#home .photo.row {
+  margin-top: 30px;
+}
 /* ###################################################################### */
 /*   ABOUT PAGE                                                           */
 /* ###################################################################### */
@@ -250,6 +303,9 @@ table ul li {
 #programs #parent-family-edu-events-photos img {
   max-height: 500px;
 }
+#programs .read-aloud-readers .photo-small img {
+  margin-bottom: 6px;
+}
 /* ###################################################################### */
 /*   FOR PARENTS PAGE                                                     */
 /* ###################################################################### */
@@ -261,14 +317,11 @@ table ul li {
 #parents td {
   vertical-align: top;
 }
-#parents .row.photo {
-  margin-top: 0;
-}
-#parents .row.photo img {
-  margin: 10px 10px 20px 0;
-}
 #parents .suggestions-spanish {
   margin-top: 20px;
+}
+#parents .hints-title {
+  margin-top: 2em;
 }
 /* ###################################################################### */
 /*   LOCAL LIBRARIES PAGE                                                 */
@@ -277,10 +330,6 @@ table ul li {
   background: url('../img/bg_LocalLibraries_PelicansBooks.png') no-repeat left 130px;
   width: 1020px;
   height: 873px;
-}
-#libraries .library-information p {
-  font-size: 18px;
-  padding-bottom: 24px;
 }
 /* ###################################################################### */
 /*   VOLUNTEER PAGE                                                       */

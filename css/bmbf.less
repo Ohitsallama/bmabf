@@ -1,12 +1,14 @@
 @title-font: 'Luckiest Guy', cursive;
 @blue-color: #002aaf;
-@nav-font-color: #fed100;
+@nav-font-color: #ffe58b;
+@default-font-size: 18px;
+@default-font-weight: 400;
 
 body {
   background-color: #a7d5f7;
   font-family: "Gill Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: @default-font-size;
+  font-weight: @default-font-weight;
 }
 #wrap {
   padding-bottom: 100px;
@@ -39,6 +41,7 @@ header .navbar {
   min-height: 32px;
 }
 header .navbar-nav > li > a {
+  font-size: 16px;
   line-height: 32px;
   padding: 0;
   text-align: center;
@@ -114,6 +117,49 @@ header .donate-cta a {
                -1px  1px 0 #fff,
                 1px  1px 0 #fff;
 }
+footer {
+  ul {
+    font-size: 16px;
+    list-style: none;
+    margin: 0; padding: 0;
+
+    &.main-nav {
+      border-top: 1px solid #683f00;
+      margin: 50px 0 0; padding: 5px 0 0;
+    }
+
+    li {
+      float: left;
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a, a:hover, a:active, a:visited {
+        color: #683f00;
+      }
+    }
+  }
+
+  .sub-nav {
+    p {
+      float: left;
+      margin-top: 10px;
+    }
+
+    ul {
+      float: left;
+      font-size: 14px;
+      font-style: italic;
+      margin: 10px 0 0 15px;
+
+      li { line-height: 26px; }
+    }
+  }
+
+  .donate { text-align: center; }
+}
 a.btn-primary {
   background: url('../img/bluebutton.png') repeat-x;
   border: none;
@@ -137,18 +183,20 @@ a.btn-primary {
 .photo {
   font-size: 14px;
   font-style: italic;
-  &.row {
+  &.row.more {
     margin-top: 30px;
   }
 }
 .lead {
   /*background-color: RGBA(255,255,255,0.3);*/
-  font-size: 16px;
-  font-weight: 400;
+  font-size: @default-font-size;
+  font-weight: @default-font-weight;
   margin-bottom: 0;
   margin-top: 35px;
   padding-top: 10px;
 }
+
+p { margin-bottom: 1.5em; }
 
 h2 {
   color: #F5E8E8;
@@ -205,30 +253,41 @@ table ul li {
     img { margin: 0 auto; }
   }
 }
+.carousel-control {
+  span.glyphicon {
+    background-color: RGBA(0,0,0,0.9);
+    border-radius: 50%;
+    padding: 5px 8px 9px 7px;
+    line-height: 1em;
+  }
+}
 
 /* ###################################################################### */
 /*   HOME PAGE                                                            */
 /* ###################################################################### */
 
-#home #hero-unit-inner {
-  background: url('../img/bg_home_boat.png') no-repeat left 130px;
-  width: 1020px; height: 581px;
-}
-#home h1 {
-  background: url('../img/Title_Homepage.png') no-repeat -34px 0;
-  margin: 0; padding: 0;
-  width: 931px; height: 134px;
-}
-#home .photos p {
-  margin-bottom: 20px;
-}
-#home .steps-to-success ol {
-  background: url('../img/Graphic_homepage.png') no-repeat;
-  margin: 40px 0 0; padding: 0;
-  width: 591px; height: 400px;
-}
-#home .steps-to-success li {
-  display: none;
+#home {
+  #hero-unit-inner {
+    background: url('../img/bg_home_boat.png') no-repeat left 130px;
+    width: 1020px; height: 581px;
+  }
+  h1 {
+    background: url('../img/Title_Homepage.png') no-repeat -34px 0;
+    margin: 0; padding: 0;
+    width: 931px; height: 134px;
+  }
+  .photos p {
+    margin-bottom: 20px;
+  }
+  .steps-to-success ol {
+    background: url('../img/Graphic_homepage.png') no-repeat;
+    margin: 40px 0 0; padding: 0;
+    width: 591px; height: 400px;
+  }
+  .steps-to-success li {
+    display: none;
+  }
+  .photo.row { margin-top: 30px; }
 }
 
 /* ###################################################################### */
@@ -257,6 +316,10 @@ table ul li {
     height: 500px;
     img { max-height: 500px; }
   }
+
+  .read-aloud-readers .photo-small img {
+    margin-bottom: 6px;
+  }
 }
 
 /* ###################################################################### */
@@ -273,15 +336,12 @@ table ul li {
     vertical-align: top;
   }
 
-  .row.photo {
-    margin-top: 0;
-    img {
-      margin: 10px 10px 20px 0;
-    }
-  }
-
   .suggestions-spanish {
     margin-top: 20px;
+  }
+
+  .hints-title {
+    margin-top: 2em;
   }
 }
 
@@ -292,11 +352,6 @@ table ul li {
 #libraries #hero-unit-inner {
   background: url('../img/bg_LocalLibraries_PelicansBooks.png') no-repeat left 130px;
   width: 1020px; height: 873px;
-}
-
-#libraries .library-information p {
-  font-size: 18px;
-  padding-bottom: 24px;
 }
 
 /* ###################################################################### */
